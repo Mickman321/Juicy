@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Playermovement : MonoBehaviour
 {
+    [SerializeField, Range(1, 100)]
+    float speed;
+    [SerializeField]
+    KeyCode left;
+    [SerializeField]
+    KeyCode right;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,10 +20,10 @@ public class Playermovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(down))
+        if (Input.GetKey(right))
         {
             // den här koden flyttar spelaren till den position som beffiner sig i -y.
-            transform.position += new Vector3(0, -speed, 0) * Time.deltaTime;
+            transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
             print("Hej Mickael");
         }
         if (Input.GetKey(left))
