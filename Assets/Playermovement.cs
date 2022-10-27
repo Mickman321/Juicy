@@ -10,6 +10,10 @@ public class Playermovement : MonoBehaviour
     KeyCode left;
     [SerializeField]
     KeyCode right;
+    [SerializeField]
+    KeyCode up;
+    [SerializeField]
+    KeyCode down;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +26,7 @@ public class Playermovement : MonoBehaviour
     {
         if (Input.GetKey(right))
         {
-            // den här koden flyttar spelaren till den position som beffiner sig i -y.
+            // den här koden flyttar spelaren till den position som beffiner sig i x.
             transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
             print("Hej Mickael");
         }
@@ -34,6 +38,19 @@ public class Playermovement : MonoBehaviour
             transform.position += new Vector3(-speed, 0, 0) * Time.deltaTime;
             print("Hej Mickael");
         }
-       
+        if (Input.GetKey(up))
+        {
+            // den här koden flyttar spelaren till den position som beffiner sig i x.
+            transform.position += new Vector3(0, speed, 0) * Time.deltaTime;
+            print("Hej Mickael");
+        }
+        if (Input.GetKey(down))
+        {
+            // Den här koden startar en animation när spelarens position är mot x och hastighet över noll.
+
+            // den här koden flyttar spelaren till den position som beffiner sig i -x.
+            transform.position += new Vector3(0, -speed, 0) * Time.deltaTime;
+            print("Hej Mickael");
+        }
     }
 }
