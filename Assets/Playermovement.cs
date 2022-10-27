@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Playermovement : MonoBehaviour
 {
-    [SerializeField, Range(1, 100)]
+    [SerializeField, Range(1, 160)]
     float speed;
     [SerializeField]
     KeyCode left;
