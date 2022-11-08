@@ -742,7 +742,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1660050169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: a612bcec6e1d1b6468a0d6e3b7d748c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -751,15 +750,6 @@ MonoBehaviour:
   right: 100
   up: 119
   down: 115
-=======
-  m_Script: {fileID: 11500000, guid: 5a29f10151a97fd48b1718f6aea53322, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  damage: 1
-  rb: {fileID: 1660050171}
-  impactEffect: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!1 &1882359538
 GameObject:
   m_ObjectHideFlags: 0
