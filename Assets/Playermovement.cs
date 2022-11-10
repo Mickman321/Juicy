@@ -24,13 +24,13 @@ public class Playermovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(right))
+        if (Input.GetKey(right) && transform.position.x < 69)
         {
             // den här koden flyttar spelaren till den position som beffiner sig i x.
             transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
             print("Hej Mickael");
         }
-        if (Input.GetKey(left))
+        if (Input.GetKey(left)&& transform.position.x > -69)
         {
             // Den här koden startar en animation när spelarens position är mot x och hastighet över noll.
            
